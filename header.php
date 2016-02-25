@@ -45,17 +45,20 @@
 <div id="wrapper">   
 <div class="site-branding">
 <?php
-if ( is_front_page() && is_home() ) : ?>
+//if ( is_front_page() && is_home() ) : ?>
         
     
 <div id="landing">
-    <h1><?php bloginfo( 'name' ); ?></h1>
-    <div class="tagline">
-    <?php $description = get_bloginfo( 'description', 'display' );
-    if ( $description || is_customize_preview() ) : ?> <?php echo $description; /* WPCS: xss ok. */ ?>
-    <?php endif; ?> 
-    </div>
-    <div class="des"><?php echo get_theme_mod('primary_description', 'Sample text. Change this in the customizer.'); ?></div>
+	<img class="alignleft wp-image-105 size-thumbnail" src="https://mynameistrevor.com/wp-content/uploads/2015/10/2015-09-21-15.09.01-1-e1447439143360-150x150.jpg?27cdc8" alt="Trevor" width="75" height="75" style="border-radius:50%;" srcset="https://mynameistrevor.com/wp-content/uploads/2015/10/2015-09-21-15.09.01-1-e1447439143360-150x150.jpg 150w, https://mynameistrevor.com/wp-content/uploads/2015/10/2015-09-21-15.09.01-1-e1447439143360.jpg 250w" sizes="(max-width: 150px) 100vw, 150px" title="" style="">
+	<div style="float:left;">
+    		<h1><?php bloginfo( 'name' ); ?></h1>
+    		<div class="tagline">
+	    	<?php $description = get_bloginfo( 'description', 'display' );
+	    	if ( $description || is_customize_preview() ) : ?> <?php echo $description; /* WPCS: xss ok. */ ?>
+	    	<?php endif; ?> 
+	    	</div>
+	    	<div class="des"><?php echo get_theme_mod('primary_description', 'Sample text. Change this in the customizer.'); ?></div>
+	</div>
     
     <?php
 
@@ -81,21 +84,18 @@ $defaults = array(
 wp_nav_menu( $defaults );
 
 ?>
-    
 </div>
     
     
-<?php else : ?>
+<?php //else : ?>
     
-    <a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+    <!--<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
     
 <div class="site-tag">
     <?php $description = get_bloginfo( 'description', 'display' );
     if ( $description || is_customize_preview() ) : ?> <?php echo $description; /* WPCS: xss ok. */ ?>
-    <?php endif; ?><?php endif; ?>  
-</div>
-
-    
+    <?php //endif; ?><?php endif; ?>  
+</div>-->
 
     
 
